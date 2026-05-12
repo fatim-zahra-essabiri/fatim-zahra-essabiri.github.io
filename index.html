@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CV — Fatim-Zahra Essabiri</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+<body>
+
+      <!-- canvas est la feuillle ou en fait notre deseigne de fond avec js -->
+<canvas id="fond-canvas"></canvas>
+  <nav>
+        <div class="logo-nav">FZ</div>
+        <div class="bouton-menu"><i class="fa-solid fa-bars"></i></div>
+        <ul class="liste-nav">
+            <li><a href="#accueil" class="active">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#competences"> Compétences </a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#formation"> Formation </a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+  </nav>
+
+    <section id="accueil">
+         <div class="contenu-accueil-wrapper">
+
+
+  <div class="photo-header">
+    <img src="image/photo.png" alt="Fatim-Zahra Essabiri" class="photo-profil-header" />
+  </div>
+
+  <div class="contenu-accueil">
+            <p class="texte-bonjour">Bonjour, je suis</p>
+            <h1 class="titre-nom">FATIM-ZAHRA <span>ESSABIRI</span></h1>
+            <div class="badge-role" style="opacity:0;animation:fadeUp 0.8s 0.6s forwards;">
+              <i class="fa-solid fa-code"></i>
+              Étudiante en Informatique L2
+            </div>
+        <p class="texte-description">Étudiante en programmation web, je débute avec enthousiasme et j’aime relever des défis pour apprendre à créer des applications interactives<br> </p>
+        <div class="groupe-boutons">
+          <a href="#projets" class="btn-principal"><i class="fa-solid fa-eye"></i> Voir mes projet</a>
+          <a href="#contact" class="btn-contour"><i class="fa-solid fa-paper-plane"></i> Me contacter</a>
+        </div>
+            <div class="liens-sociaux">
+               <a href="https://github.com/fatim-zahra-essabiri" class="bouton-social" title="GitHub"><i class="fa-brands fa-github"></i></a>
+               <a href="https://www.linkedin.com/in/fatim-zahra-essabiri-b7973a407/" class="bouton-social" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+               <a href="https://mail.google.com/mail/?view=cm&to=f.essabiri9238@uca.ac.ma" target="_blank" class="bouton-social" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    </section>
+            <!-- partie about  -->
+    <section id="apropos">
+        <div class="contenu-section">
+                <div class="apparition">
+                  <p class="label-section">Qui suis-je</p>
+                <h2 class="titre-section">À <span>propos</span> de moi</h2>
+                <div class="ligne-section"></div>
+              </div>
+        <div class="grille-apropos apparition">
+          <div class="texte-apropos">
+          <p> 
+            Âgée de <strong>20 ans</strong>,Je suis actuellement étudiante en <strong>2ème année Licence Informatique à la Faculté des Sciences Semlalia de Marrakech,
+          Université Cadi Ayyad.</strong></p>
+          <p>
+            L'année précédente, j'ai étudié dans la filière <strong>MIP (Mathématiques, Informatique, Physique),
+          </strong> ce qui m'a permis d'acquérir de bonnes bases scientifiques et logiques.</p>
+          <p>
+            Je m'intéresse particulièrement <strong>au développement web et à la programmation.</strong>
+          À travers mes projets universitaires, je développe progressivement mes compétences techniques
+          et ma capacité à concevoir des applications web interactives.
+          </p>
+      </div>
+        <div>
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:24px;padding:2.5rem;">
+              <h3 style="color:var(--sky);font-family:'Playfair Display',serif;margin-bottom:1.5rem;text-align:center;">Ce que je peux faire pour vous</h3>
+              <ul style="list-style:none;padding:0;margin-bottom:2rem;color:var(--text-muted);font-size:0.95rem;line-height:1.9;">
+                  <li>    -  créer des pages web structurées en HTML et CSS .</li>
+                  <li>    -  Ajouter de l'interactivité et développer des composants dynamiques avec JavaSript .</li>
+                  <li>    -  Concevoir un design responsive adapté à tous les écrans.</li>
+                  <li>    -  Transformer des idées en solutions digitales concrètes.</li>
+              </ul>
+          <h4 style="color:var(--sky);margin-bottom:1rem;text-align:center;">Mon workflow de travail</h4>
+          <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;text-align:center;">
+            <span class="etiquette">Comprendre le besoin</span>
+            <span class="etiquette">Faire le design</span>
+            <span class="etiquette">Développer</span>
+            <span class="etiquette">Tester</span>
+            <span class="etiquette">Améliorer</span>
+          </div>
+         </div>
+       </div>
+      </div>
+      </div>
+     </section>
+
+              <!-- partie de competences -->
+<section id="competences">
+      <div class="contenu-section">
+        <div class="apparition">
+          <p class="label-section">Expertise technique</p>
+          <h2 class="titre-section">Ce que je <span>maîtrise</span></h2>
+          <div class="ligne-section"></div>
+        </div>
+         <!--Front-End -->
+        <div class="grille-competences apparition">
+            <div class="categorie-competence">
+            <div class="titre-categorie"><i class="fa-solid fa-display"></i> Front-End</div>
+            <div class="item-competence">
+            <div class="entete-competence">
+              <span class="nom-competence"><i class="fa-brands fa-html5"></i> HTML / CSS</span>
+              <span class="pourcentage-competence">70%</span>
+             </div>
+             <div class="barre-fond"><div class="barre-remplissage" data-pct="70"></div></div>
+             </div>
+            <div class="item-competence">
+            <div class="entete-competence">
+            <span class="nom-competence"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="pourcentage-competence">50%</span>
+          </div>
+          <div class="barre-fond"><div class="barre-remplissage" data-pct="50"></div></div>
+        </div>
+      </div>
+     
+      <!--  back-end -->
+      <div class="categorie-competence">
+        <div class="titre-categorie"><i class="fa-solid fa-server"></i> Back-End</div>
+        <div class="item-competence">
+          <div class="entete-competence">
+            <span class="nom-competence"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="pourcentage-competence">65%</span>
+          </div>
+          <div class="barre-fond"><div class="barre-remplissage" data-pct="65"></div></div>
+        </div>
+        <div class="item-competence">
+          <div class="entete-competence">
+            <span class="nom-competence"><i class="fa-solid fa-database"></i> MySQL</span>
+            <span class="pourcentage-competence">72%</span>
+          </div>
+          <div class="barre-fond"><div class="barre-remplissage" data-pct="72"></div></div>
+        </div>
+        <div class="item-competence">
+          <div class="entete-competence">
+            <span class="nom-competence"><i class="fa-solid fa-c"></i> C++</span>
+            <span class="pourcentage-competence">60%</span>
+          </div>
+          <div class="barre-fond"><div class="barre-remplissage" data-pct="60"></div></div>
+        </div>
+      </div>
+
+      <!-- categorie outils -->
+      <div class="categorie-competence">
+        <div class="titre-categorie"><i class="fa-solid fa-wrench"></i> Outils & DevOps</div>
+          <div class="item-competence">
+            <div class="entete-competence">
+              <span class="nom-competence"><i class="fa-brands fa-git-alt"></i> Git / GitHub</span>
+                <span class="pourcentage-competence">60%</span>
+              </div>
+              <div class="barre-fond"><div class="barre-remplissage" data-pct="60"></div></div>
+              </div>
+              <div class="item-competence">
+              <div class="entete-competence">
+              <span class="nom-competence"><i class="fa-brands fa-linux"></i> Linux</span>
+              <span class="pourcentage-competence">60%</span>
+             </div>
+            <div class="barre-fond"><div class="barre-remplissage" data-pct="60"></div></div>
+            </div>
+            <div class="item-competence">
+            <div class="entete-competence">
+            <span class="nom-competence"><i class="fa-solid fa-terminal"></i> VS Code</span>
+            <span class="pourcentage-competence">78%</span>
+          </div>
+          <div class="barre-fond"><div class="barre-remplissage" data-pct="78"></div></div>
+        </div>
+      </div>
+
+      <!--  soft skills -->
+          <div class="categorie-competence">
+            <div class="titre-categorie"><i class="fa-solid fa-brain"></i> Soft Skills</div>
+            <div class="item-competence">
+              <div class="entete-competence">
+                <span class="nom-competence"><i class="fa-solid fa-people-group"></i>  Adaptabilité </span>
+                <span class="pourcentage-competence">70%</span>
+                </div>
+                  <div class="barre-fond"><div class="barre-remplissage" data-pct="70"></div></div>
+                </div>
+                <div class="item-competence">
+                  <div class="entete-competence">
+                  <span class="nom-competence"><i class="fa-solid fa-lightbulb"></i> Capacité d'apprentissage rapide </span>
+                  <span class="pourcentage-competence">85%</span>
+                </div>
+
+                  <div class="barre-fond"><div class="barre-remplissage" data-pct="85"></div></div>
+                </div>
+                <div class="item-competence">
+                  <div class="entete-competence">
+                    <span class="nom-competence"><i class="fa-solid fa-clock"></i> Gestion du temps</span>
+                    <span class="pourcentage-competence">80%</span>
+                  </div>
+                <div class="barre-fond"><div class="barre-remplissage" data-pct="80"></div></div>
+              </div>
+              <div class="item-competence">
+                <div class="entete-competence">
+                  <span class="nom-competence"><i class="fa-solid fa-comments"></i> Organisation </span>
+                  <span class="pourcentage-competence">82%</span>
+                </div>
+
+                 <div class="barre-fond"><div class="barre-remplissage" data-pct="82"></div></div>
+                </div>
+                </div>
+           </div>
+          </div>
+        </section>
+
+      <!-- partie des projets -->
+   <section id="projets">
+        <div class="contenu-section">
+          <div class="apparition">
+            <p class="label-section">Réalisations</p>
+            <h2 class="titre-section">Mes <span>projets</span></h2>
+            <div class="ligne-section"></div>
+           </div>
+
+          <div class="apparition">
+           <!-- on ajoute les cartes avec react -->
+          <div id="zone-projets"></div>
+         </div>
+      </div>
+    </section>
+
+        <!--partie de parcour academique   -->
+      <section id="formation">
+      <div class="contenu-section">
+        <div class="apparition">
+          <p class="label-section">Parcours</p>
+          <h2 class="titre-section">Mon parcours <span>académique</span></h2>
+          <div class="ligne-section"></div>
+      
+              </div>
+              <div class="grille-formation apparition">
+
+              <div class="carte-formation" onclick="ouvrirFormation(this)">
+              <div class="entete-carte-formation">
+                <div class="icone-formation"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                  <div class="titre-formation">2ème année Licence Informatique (SINF)</div>
+                  <div class="ecole-formation">FSSM — Université Cadi Ayyad, Marrakech</div>
+                  <div class="annee-formation"><i class="fa-regular fa-calendar"></i> 2025 — 2026</div>
+                </div>
+           </div>
+        <div class="bouton-details"><i class="fa-solid fa-chevron-down icone-toggle"></i> Voir les détails</div>
+        <div class="details-formation">
+          <div class="contenu-details">
+            <p>
+      Étudiante en informatique, j'ai étudié les bases de la programmation et des systèmes informatiques.
+                </p>
+                <ul>
+                    <li>Structures de données</li>
+                    <li>Programmation en C++</li>
+                    <li>Développement web (HTML, CSS, JavaScript)</li>
+                    <li>Systèmes d'exploitation (Linux)</li>
+                    <li>Bases de données</li>
+                    <li>Analyse numérique</li></ul>
+           </div>
+           </div>
+          </div>
+
+        <div class="carte-formation" onclick="ouvrirFormation(this)">
+          <div class="entete-carte-formation">
+            <div class="icone-formation"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+            <div class="titre-formation">1ère année Licence tronc commun (MIP)</div>
+                  <div class="ecole-formation">FSSM — Université Cadi Ayyad, Marrakech</div>
+                  <div class="annee-formation"><i class="fa-regular fa-calendar"></i> 2024 — 2025</div>
+                </div>
+              </div>
+              <div class="bouton-details"><i class="fa-solid fa-chevron-down icone-toggle"></i> Voir les détails</div>
+              <div class="details-formation">
+                <div class="contenu-details">
+                  <p> J'ai suivi une formation en tronc commun MIP qui m'a permis d'acquérir des bases en mathématiques, physique et informatique.</p>
+                  <ul>
+                    <li>Algèbre et analyse</li>
+                    <li>Algorithmique et programmation en Python</li>
+                    <li>Physique (optique, mécanique, thermodynamique)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+           <div class="carte-formation" onclick="ouvrirFormation(this)">
+           <div class="entete-carte-formation">
+            <div class="icone-formation"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <div class="titre-formation">Baccalauréat Sciences Physiques</div>
+              <div class="ecole-formation">Lycée Ibn Al Haytam, Marrakech</div>
+              <div class="annee-formation"><i class="fa-regular fa-calendar"></i> 2023 — 2024</div>
+              </div>
+              </div>
+              <div class="bouton-details"><i class="fa-solid fa-chevron-down icone-toggle"></i> Voir les détails</div>
+              <div class="details-formation">
+                <div class="contenu-details">
+                <p> J'ai obtenu mon baccalauréat en sciences physiques avec mention Assez Bien, ce qui m'a permis d'acquérir de bonnes bases en sciences et en logique.</p>
+                <ul>
+                  <li>Mathématiques </li>
+                  <li>Physique-Chimie</li>
+                  <li>Sciences de la vie et de terre</li>
+                  <li>Informatique</li>
+                </ul>
+              </div>
+              </div>
+            </div>
+
+       </div>
+      </div>
+     </section>
+
+      <!-- les langues  -->
+          <section id="section-langues">
+            <div class="contenu-section">
+              <div class="apparition">
+                <p class="label-section">Communication</p>
+                <h2 class="titre-section">Mes <span>langues</span></h2>
+                <div class="ligne-section"></div>
+                  </div>
+              <div class="grille-langues apparition">
+              <div class="carte-langue">
+                <span class="drapeau-langue">🇲🇦</span>
+                <div class="nom-langue">Arabe</div>
+                <div class="niveau-langue">Langue maternelle — C2</div>
+                <div class="points-langue">
+              <div class="point-langue rempli"></div><div class="point-langue rempli"></div>
+              <div class="point-langue rempli"></div><div class="point-langue rempli"></div>
+                  <div class="point-langue rempli"></div><div class="point-langue rempli"></div>
+                </div>
+              </div>
+                  <div class="carte-langue">
+                <span class="drapeau-langue">🇫🇷</span>
+                <div class="nom-langue">Français</div>
+                <div class="niveau-langue">Courant — B2</div>
+                <div class="points-langue">
+                  <div class="point-langue rempli"></div><div class="point-langue rempli"></div>
+                  <div class="point-langue rempli"></div><div class="point-langue rempli"></div>
+                        <div class="point-langue"></div><div class="point-langue"></div>
+                      </div>
+                    </div>
+                    <div class="carte-langue">
+                      <span class="drapeau-langue">🇬🇧</span>
+                      <div class="nom-langue">Anglais</div>
+                      <div class="niveau-langue">Intermédiaire — B1</div>
+                      <div class="points-langue">
+                  <div class="point-langue rempli"></div><div class="point-langue rempli"></div>
+                  <div class="point-langue rempli"></div><div class="point-langue"></div>
+                  <div class="point-langue"></div><div class="point-langue"></div>
+                </div>
+            </div>
+          </div>
+          </div>  
+      </section>
+
+          <!--contact -->
+    <section id="contact">
+      <div class="contenu-section">
+            <div class="apparition">
+          <p class="label-section">Me joindre</p>
+          <h2 class="titre-section">Entrons en <span>contact</span></h2>
+          <div class="ligne-section"></div>
+                  </div>
+              <div class="grille-contact apparition">
+                <div class="infos-contact">
+                <h3>Discutons ensemble</h3>
+                <p>Ouverte aux stages, projets et collaborations qui me permettront d’apprendre et d’acquérir de l’expérience. Je suis disponible et réactive.</p>
+                <div class="liste-infos-contact">
+                  <div class="ligne-contact">
+                    <div class="icone-contact"><i class="fa-solid fa-envelope"></i></div>
+                    <span>f.essabiri9238@uca.ac.ma</span>
+                  </div>
+                  <div class="ligne-contact">
+                    <div class="icone-contact"><i class="fa-solid fa-phone"></i></div>
+                    <span>+212 628 686 099</span>
+                  </div>
+                  <div class="ligne-contact">
+                    <div class="icone-contact"><i class="fa-solid fa-location-dot"></i></div>
+                    <span>Marrakech, Maroc</span>
+                  </div>
+                  <div class="ligne-contact">
+                    <div class="icone-contact"><i class="fa-brands fa-linkedin"></i></div>
+                    <span>linkedin.com/in/fatim-zahra-essabiri</span>
+                  </div>
+                  <div class="ligne-contact">
+                    <div class="icone-contact"><i class="fa-brands fa-github"></i></div>
+                    <span>github.com/fatim-zahra-essabiri</span>
+                  </div>
+                </div>
+              </div>
+
+        <!-- le formulaire de contat est gerer par react  -->
+      <div id="zone-contact"></div>
+
+        </div>
+      </div>
+    </section>
+
+ <footer>
+      <p> &copy; 2026 <span> cv </span> — Tous droits réservés.</p>
+ </footer>
+
+<script src="js/app.js"></script>
+<script type="text/babel">
+// les carte des projets 
+function CarteProjet({ icone, titre, description, technologies, lienGithub, lienDemo }) {
+      return (
+          <div className="carte-projet">
+              <div className="icone-projet"><i className={icone}></i></div>
+                <h3 className="titre-projet">{titre}</h3>
+                <p className="description-projet">{description}</p>
+                <div className="tags-projet">
+                  {technologies.map(function(tech, i) {
+                    return <span key={i} className="etiquette">{tech}</span>;
+                  })}
+                </div>
+                <div className="liens-projet">
+                  <a href={lienGithub} className="lien-projet"><i className="fa-brands fa-github"></i> Code source</a>
+                  <a href={lienDemo}   className="lien-projet"><i className="fa-solid fa-arrow-up-right-from-square"></i> Démo live</a>
+              </div>
+          </div>
+      );
+    }
+
+
+
+// les barres de progression
+function BarreCompetence({ icone, nom, pourcentage }) {
+  return (
+    <div className="item-competence">
+      <div className="entete-competence">
+        <span className="nom-competence"><i className={icone}></i> {nom}</span>
+        <span className="pourcentage-competence">{pourcentage}%</span>
+      </div>
+      <div className="barre-fond">
+        <div className="barre-remplissage" data-pct={pourcentage}></div>
+      </div>
+    </div>
+  );
+}
+
+// formulaire avesc validation et envoie d'email 
+
+var CLE_PUBLIQUE_EMAILJS  = "N3VvaVBBfCKUh3JXt";
+var ID_SERVICE_EMAILJS    = "service_26t6vvl";
+var ID_TEMPLATE_EMAILJS   = "template_vck9fuq";
+
+function FormulaireContact() {
+  function envoyerMessage() {
+    var nom    = document.getElementById("champ-nom").value.trim();
+    var email  = document.getElementById("champ-email").value.trim();
+    var sujet  = document.getElementById("champ-sujet").value.trim();
+    var msg    = document.getElementById("champ-message").value.trim();
+    var erreur = document.getElementById("zone-erreur");
+    var btn    = document.getElementById("btn-envoyer");
+
+    $(erreur).hide().text("");
+    $(".groupe-champ input, .groupe-champ textarea").css("border-color", "");
+
+    var ok = true;
+    var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (nom   === "") { $("#champ-nom").css("border-color","#ef4444"); ok = false; }
+    if (email === "" || !regexEmail.test(email)) { $("#champ-email").css("border-color","#ef4444"); ok = false; }
+    if (sujet === "") { $("#champ-sujet").css("border-color","#ef4444"); ok = false; }
+    if (msg   === "") { $("#champ-message").css("border-color","#ef4444"); ok = false; }
+
+    if (!ok) {
+      $(erreur).text("Veuillez remplir tous les champs correctement.").fadeIn(300);
+      return;
+    }
+
+    $(btn).html('<i class="fa-solid fa-spinner fa-spin"></i> Envoi...').prop("disabled", true);
+
+    emailjs.send(ID_SERVICE_EMAILJS, ID_TEMPLATE_EMAILJS,
+      { nom, email_expediteur: email, sujet, message: msg },
+      CLE_PUBLIQUE_EMAILJS
+    ).then(function() {
+      $(btn).html('<i class="fa-solid fa-check"></i> Message envoyé !').css("background","#22c55e").prop("disabled",false);
+      $("#champ-nom, #champ-email, #champ-sujet, #champ-message").val("");
+      setTimeout(function() { $(btn).html('<i class="fa-solid fa-paper-plane"></i> Envoyer le message').css("background",""); }, 4000);
+    }).catch(function() {
+      $(erreur).text("Erreur lors de l'envoi. Vérifiez vos informations .").fadeIn(300);
+      $(btn).html('<i class="fa-solid fa-paper-plane"></i> Envoyer le message').prop("disabled",false);
+    });
+  }
+
+  return (
+    <div className="formulaire-contact">
+      <div id="zone-erreur" style={{display:"none",background:"rgba(239,68,68,0.1)",border:"1px solid #ef4444",borderRadius:"10px",padding:"0.7rem 1rem",color:"#fca5a5",fontSize:"0.85rem",marginBottom:"1rem"}}></div>
+      <div className="groupe-champ"><label>Nom complet</label><input id="champ-nom" type="text" placeholder="Nom Prénom" /></div>
+      <div className="groupe-champ"><label>Adresse e-mail</label><input id="champ-email" type="email" placeholder="example@example.com" /></div>
+      <div className="groupe-champ"><label>Sujet</label><input id="champ-sujet" type="text" placeholder="Proposition de stage ou projet" /></div>
+      <div className="groupe-champ"><label>Message</label><textarea id="champ-message" placeholder="Votre message..."></textarea></div>
+      <button id="btn-envoyer" className="btn-principal" style={{width:"100%",justifyContent:"center",borderRadius:"12px"}} onClick={envoyerMessage}>
+        <i className="fa-solid fa-paper-plane"></i> Envoyer le message
+      </button>
+    </div>
+  );
+}
+
+//  on injecte les composants dans le HTML
+
+var listeProjets = [
+  {
+    icone: "fa-solid fa-gamepad",
+    titre: "Jeu vidéo en C++ — Runner Game",
+    description: "Jeu vidéo développé en C++ où une fille court en évitant des obstacles. Gestion des collisions, mouvements, score et logique de jeu.",
+    technologies: ["C++", "Algorithmique", "Logique de jeu"],
+    lienGithub: "https://github.com/fatim-zahra-essabiri/projet_c-.git", lienDemo: "#"
+  },
+  {
+    icone: "fa-solid fa-globe",
+    titre: "Site Web Touristique du Maroc",
+    description: "Site web statique présentant les villes du Maroc, les plats traditionnels, les activités, les hôtels et les moyens de transport.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    lienGithub: "https://github.com/fatim-zahra-essabiri/mini-projet.git", lienDemo: "https://fatim-zahra-essabiri.github.io/mini-projet/"
+  }
+];
+
+ReactDOM.createRoot(document.getElementById("zone-projets")).render(
+  <div className="grille-projets">
+    {listeProjets.map((p, i) => <CarteProjet key={i} {...p} />)}
+  </div>
+);
+
+ReactDOM.createRoot(document.getElementById("zone-contact")).render(<FormulaireContact />);
+
+</script>
+</body>
+</html>

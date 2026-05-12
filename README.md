@@ -70,18 +70,5 @@ J'ai fait 3 composants :
 - `FormulaireContact` → le formulaire avec validation et envoi par EmailJS
 
 
-## Pour configurer le formulaire de contact
-
-Dans `index.html` il faut remplacer ces 3 lignes par tes vraies clés EmailJS :
-
-```javascript
-var CLE_PUBLIQUE_EMAILJS  = "REMPLACE_PAR_TA_PUBLIC_KEY";
-var ID_SERVICE_EMAILJS    = "REMPLACE_PAR_TON_SERVICE_ID";
-var ID_TEMPLATE_EMAILJS   = "REMPLACE_PAR_TON_TEMPLATE_ID";
-```
-
-Tu peux créer un compte gratuit sur [emailjs.com](https://www.emailjs.com)
-
-
 
 *Projet réalisé dans le cadre de ma 2ème année Licence Informatique — FSSM Marrakech*
